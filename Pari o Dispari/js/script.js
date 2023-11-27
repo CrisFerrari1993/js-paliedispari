@@ -10,7 +10,10 @@ let genera = document.getElementById('genera');
 //creo evento listenere al bottone
 genera.addEventListener('click', function(){
 
-
-
+    //definisco variabile scelta utente e numero selezionato
+    const userChoice = document.getElementById('choice').value;
+    console.log(userChoice);
+    const userNum = document.getElementById('numero').value;
+    console.log(userNum); 
     }
 );
