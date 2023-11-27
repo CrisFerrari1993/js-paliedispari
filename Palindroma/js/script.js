@@ -11,7 +11,9 @@ const checkButton = document.getElementById('send');
 checkButton.addEventListener('click', function(){
         //definizione funzione 
         function frasePalindroma() {
-
+            //definizione variabili nella funzione
+            const fraseUser = document.getElementById('userInput').value;
+            console.log(fraseUser);
         }
 
     }
