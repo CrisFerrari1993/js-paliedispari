@@ -8,8 +8,8 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari(us
 // Definisco Variabile per bottone
 let genera = document.getElementById('genera');
 //creo evento listenere al bottone
-genera.addEventListener('click', function(){
-
+genera.addEventListener('click',function(event){
+    event.preventDefault();
     //definisco variabile scelta utente e numero selezionato
     const userChoice = document.getElementById('choice').value;
 
