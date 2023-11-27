@@ -9,12 +9,17 @@ const checkButton = document.getElementById('send');
 //aggiungo l'event listener al bottone
 
 checkButton.addEventListener('click', function(){
-        //definizione funzione 
-        function frasePalindroma() {
-            //definizione variabili nella funzione
+
+        //definizioe input dell'user 
             const fraseUser = document.getElementById('userInput').value;
             console.log(fraseUser);
-        }
 
+        // scompongo la frase
+            let fraseScomposta = fraseUser.split('');
+            console.log(fraseScomposta);
+        //inverto la frase o parola
+            let fraseInvertita = fraseScomposta.reverse('');
+            console.log(fraseInvertita);
+        
     }
 );
