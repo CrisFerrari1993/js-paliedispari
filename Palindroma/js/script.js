@@ -20,6 +20,14 @@ checkButton.addEventListener('click', function(){
         //inverto la frase o parola
             let fraseInvertita = fraseScomposta.reverse('');
             console.log(fraseInvertita);
-        
+        //riunisco le parole in una stringa
+            fraseInvertita = fraseInvertita.join('');
+            console.log(fraseInvertita);
+        // controllo se la frase inserita sia palindroma o meno
+            if (fraseUser == fraseInvertita){
+                return document.querySelector('.resoult').innerHTML = `La frase è palindroma perchè ${fraseUser} letta al contrario è ${fraseInvertita}`
+            } else {
+                return document.querySelector('.resoult').innerHTML = `La frase non è palindroma perchè ${fraseUser} letta al contrario è ${fraseInvertita}`
+            };
     }
 );
