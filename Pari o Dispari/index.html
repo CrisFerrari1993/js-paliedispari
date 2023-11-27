@@ -12,11 +12,14 @@
             <form action="#">
                 <div class="left">
                     <label for="choice">Pari o Dispari?</label>
-                    <input type="text" placeholder="Pari o dispari?" id="choice">
+                    <select name="scegli" id="choice">
+                        <option value="pari">Pari</option>
+                        <option value="dispari">Dispari</option>
+                    </select>
                 </div>
                 <div class="right">
                     <label for="num">Inserisci un numero da 0 a 5</label>
-                    <input type="text" placeholder="Inserisci un numero da 0 a 5" id="choice">
+                    <input type="number" placeholder="Inserisci un numero da 0 a 5" id="choice">
                 </div>
                 <div class="center">
                     <button id="genera">Gioca</button>
