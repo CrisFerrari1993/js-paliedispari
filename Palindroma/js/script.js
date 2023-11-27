@@ -9,8 +9,10 @@ const checkButton = document.getElementById('send');
 //aggiungo l'event listener al bottone
 
 checkButton.addEventListener('click', function(){
-        
-        
+        //definizione funzione 
+        function frasePalindroma() {
+
+        }
 
     }
 );
