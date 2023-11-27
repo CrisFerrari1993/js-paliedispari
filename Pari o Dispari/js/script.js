@@ -15,5 +15,16 @@ genera.addEventListener('click', function(){
     console.log(userChoice);
     const userNum = document.getElementById('numero').value;
     console.log(userNum); 
+    // funzione numero casuale pc
+    function pcNum(min, max){
+        let num = Math.floor(Math.random(min) * max) + min;
+        return num
     }
+    // visualizzo su console scelta user
+    console.log('La tua scelta é: ' + userChoice);
+    console.log('Il numero che hai scelto è: ' + userNum);
+    
+
+    }
+
 );
