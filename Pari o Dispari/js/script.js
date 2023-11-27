@@ -51,9 +51,9 @@ genera.addEventListener('click', function(){
     let verdetto = pariODispari();
 
     if (userChoice === verdetto) {
-        console.log(`Hai vinto! Tu hai scelto ${userChoice} e la somma del tuo numero ${userNum} piu quella del PC ${pcChoice} ha dato come risultato ${total} che è un numero ${pariODispari()}`);
+        return document.getElementById('resoult').innerHTML = `Hai vinto! Tu hai scelto ${userChoice} e la somma del tuo numero ${userNum} piu quella del PC ${pcChoice} ha dato come risultato ${total} che è un numero ${pariODispari()} `;
     } else {
-        console.log('Hai perso');
+        return document.getElementById('resoult').innerHTML = `Hai perso! tu hai scelto ${userChoice} e la somma del tuo numero ${userNum} piu quella del PC ${pcChoice} ha dato come risultato ${total} che è un numero ${pariODispari()}`;
     }
     //dichiaro il riusltato dsella somma in una variabile
  }
