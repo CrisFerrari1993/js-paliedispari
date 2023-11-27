@@ -13,7 +13,7 @@ genera.addEventListener('click', function(){
     //definisco variabile scelta utente e numero selezionato
     const userChoice = document.getElementById('choice').value;
 
-    const userNum = document.getElementById('numero').value;
+    const userNum = parseInt(document.getElementById('numero').value);
     // funzione numero casuale pc
     function pcNum(min, max){
         let num = Math.floor(Math.random(min) * max) + min;
@@ -35,6 +35,19 @@ genera.addEventListener('click', function(){
     let total = sum(pcChoice, userNum);
 
     console.log('La somma delle scelte è: ' + total);
+
+    //funzione che determina se la somma è pari o dispari
+    function pariODispari(){
+        if (total % 2 !== 0){
+            return 'dispari'
+        } else {
+            return 'pari'
+        }
+    };
+
+    console.log(pariODispari());
+
+    //definisco variabilke al verdetto finale
 
     //dichiaro il riusltato dsella somma in una variabile
  }
