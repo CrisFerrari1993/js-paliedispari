@@ -52,9 +52,10 @@ CONTAINER SETTINGS
 .center{
     width: 100%;
     display: flex;
-    justify-content: center;   
+    flex-direction: column;   
 }
 .center button{
+    justify-self: center;
     margin: 1rem 0;
     padding: 0.5rem;
     background-color: cadetblue;
